@@ -50,22 +50,22 @@ td {
 
 a:link {
 	text-decoration: none;
-	color: #23bee2;
+	color: #d4af37;
 }
 
 a:visited {
 	text-decoration: none;
-	color: #23bee2;
+	color: #d4af37;
 }
 
 a:hover {
 	text-decoration: underline;
-	color: #23bee2;
+	color: #d4af37;
 }
 
 a:active {
 	text-decoration: none;
-	color: #23bee2;
+	color: #d4af37;
 }
 
 form {
@@ -92,7 +92,7 @@ form {
 	vertical-align: middle;
 	padding: 10px;
 	color: #fff;
-	background-color: #23bee2;
+	background-color: #d4af37;
 	text-transform: uppercase;
 	font-size: 12px;
 }
