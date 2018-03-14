@@ -1,0 +1,413 @@
+2018-03-12 04:53:42.845	    7ffb1b4e5740	INFO 	logging	contrib/epee/src/mlog.cpp:148	New log categories: *:WARNING,net:FATAL,net.p2p:FATAL,net.cn:FATAL,global:INFO,verify:FATAL,stacktrace:INFO,logging:INFO,msgwriter:INFO
+2018-03-12 04:53:42.845	    7ffb1b4e5740	INFO 	global	src/daemon/main.cpp:279	Electroneum 'Helium Hydra' (v0.11.1.0-6d5e1be)
+2018-03-12 04:53:42.845	    7ffb1b4e5740	INFO 	global	src/daemon/protocol.h:55	Initializing cryptonote protocol...
+2018-03-12 04:53:42.846	    7ffb1b4e5740	INFO 	global	src/daemon/protocol.h:60	Cryptonote protocol initialized OK
+2018-03-12 04:53:42.846	    7ffb1b4e5740	INFO 	global	src/daemon/p2p.h:63	Initializing p2p server...
+2018-03-12 04:53:46.900	    7ffb1b4e5740	INFO 	global	src/daemon/p2p.h:68	P2p server initialized OK
+2018-03-12 04:53:46.901	    7ffb1b4e5740	INFO 	global	src/daemon/rpc.h:58	Initializing core rpc server...
+2018-03-12 04:53:46.901	    7ffb1b4e5740	INFO 	global	contrib/epee/include/net/http_server_impl_base.h:70	Binding on 127.0.0.1:48091
+2018-03-12 04:53:46.902	    7ffb1b4e5740	INFO 	global	src/daemon/rpc.h:63	Core rpc server initialized OK on port: 48091
+2018-03-12 04:53:46.902	    7ffb1b4e5740	INFO 	global	src/daemon/core.h:73	Initializing core...
+2018-03-12 04:53:46.903	    7ffb1b4e5740	INFO 	global	src/cryptonote_core/cryptonote_core.cpp:323	Loading blockchain from folder /root/.kryptonium/lmdb ...
+2018-03-12 04:53:46.904	    7ffb1b4e5740	WARN 	blockchain.db.lmdb	src/blockchain_db/lmdb/db_lmdb.cpp:72	Error attempting to retrieve a hard fork version at height 0 from the db: MDB_NOTFOUND: No matching key/data pair found
+2018-03-12 04:53:46.904	    7ffb1b4e5740	INFO 	stacktrace	src/common/stack_trace.cpp:120	Exception: cryptonote::DB_ERROR
+2018-03-12 04:53:46.904	    7ffb1b4e5740	INFO 	stacktrace	src/common/stack_trace.cpp:121	Unwound call stack:
+2018-03-12 04:53:46.906	    7ffb1b4e5740	INFO 	stacktrace	src/common/stack_trace.cpp:159	    [1] ./kryptoniumd:__cxa_throw+0x106 [0x7cc0e6]
+2018-03-12 04:53:46.906	    7ffb1b4e5740	INFO 	stacktrace	src/common/stack_trace.cpp:159	    [2] ./kryptoniumd() [0x703d04]
+2018-03-12 04:53:46.906	    7ffb1b4e5740	INFO 	stacktrace	src/common/stack_trace.cpp:159	    [3] ./kryptoniumd:cryptonote::BlockchainLMDB::get_hard_fork_version(unsigned long) const+0x3e9 [0x726589]
+2018-03-12 04:53:46.906	    7ffb1b4e5740	INFO 	stacktrace	src/common/stack_trace.cpp:159	    [4] ./kryptoniumd:cryptonote::HardFork::init()+0x134 [0x819b64]
+2018-03-12 04:53:46.906	    7ffb1b4e5740	INFO 	stacktrace	src/common/stack_trace.cpp:159	    [5] ./kryptoniumd:cryptonote::Blockchain::init(cryptonote::BlockchainDB*, bool, cryptonote::test_options const*)+0x1e7 [0x756067]
+2018-03-12 04:53:46.906	    7ffb1b4e5740	INFO 	stacktrace	src/common/stack_trace.cpp:159	    [6] ./kryptoniumd:cryptonote::core::init(boost::program_options::variables_map const&, cryptonote::test_options const*)+0xcc2 [0x76fc52]
+2018-03-12 04:53:46.906	    7ffb1b4e5740	INFO 	stacktrace	src/common/stack_trace.cpp:159	    [7] ./kryptoniumd:daemonize::t_daemon::run(bool)+0x1e0 [0x573280]
+2018-03-12 04:53:46.906	    7ffb1b4e5740	INFO 	stacktrace	src/common/stack_trace.cpp:159	    [8] ./kryptoniumd:daemonize::t_executor::run_interactive(boost::program_options::variables_map const&)+0x2a [0x67a54a]
+2018-03-12 04:53:46.906	    7ffb1b4e5740	INFO 	stacktrace	src/common/stack_trace.cpp:159	    [9] ./kryptoniumd:bool daemonizer::daemonize<daemonize::t_executor>(int, char const**, daemonize::t_executor&&, boost::program_options::variables_map const&)+0x17c [0x67c93c]
+2018-03-12 04:53:46.906	    7ffb1b4e5740	INFO 	stacktrace	src/common/stack_trace.cpp:159	    [10] ./kryptoniumd:main+0x14be [0x54804e]
+2018-03-12 04:53:46.906	    7ffb1b4e5740	INFO 	stacktrace	src/common/stack_trace.cpp:159	    [11] /lib/x86_64-linux-gnu/libc.so.6:__libc_start_main+0xf0 [0x7ffb1880e830]
+2018-03-12 04:53:46.906	    7ffb1b4e5740	INFO 	stacktrace	src/common/stack_trace.cpp:159	    [12] ./kryptoniumd:_start+0x29 [0x54f279]
+2018-03-12 04:53:46.906	    7ffb1b4e5740	INFO 	stacktrace	src/common/stack_trace.cpp:159	
+2018-03-12 04:53:46.978	    7ffb1b4e5740	INFO 	global	src/cryptonote_core/cryptonote_core.cpp:421	Loading checkpoints
+2018-03-12 04:53:46.984	    7ffb1b4e5740	INFO 	global	src/daemon/core.h:78	Core initialized OK
+2018-03-12 04:53:46.985	    7ffb1b4e5740	INFO 	global	src/daemon/rpc.h:68	Starting core rpc server...
+2018-03-12 04:53:46.985	[SRV_MAIN]	INFO 	global	src/daemon/rpc.h:73	Core rpc server started ok
+2018-03-12 04:53:46.986	[SRV_MAIN]	INFO 	global	src/daemon/p2p.h:78	Starting p2p net loop...
+2018-03-12 04:53:47.987	[P2P1]	INFO 	global	src/cryptonote_core/cryptonote_core.cpp:1258	[1;33m
+**********************************************************************
+The daemon will start synchronizing with the network. This may take a long time to complete.
+
+You can set the level of process detailization* through "set_log <level|categories>" command*,
+where <level> is between 0 (no details) and 4 (very verbose), or custom category based levels (eg, *:WARNING)
+
+Use the "help" command to see the list of available commands.
+**********************************************************************
+[0m
+2018-03-12 04:53:53.950	[P2P1]	INFO 	global	src/cryptonote_protocol/cryptonote_protocol_handler.inl:302	[46.101.40.29:54014 INC] Sync data returned a new top block candidate: 1 -> 6 [Your node is 5 blocks (0 days) behind] 
+SYNCHRONIZATION started
+2018-03-12 04:53:57.988	[P2P9]	INFO 	global	src/cryptonote_protocol/cryptonote_protocol_handler.inl:1540	[1;33m
+**********************************************************************
+You are now synchronized with the network. You may now start electroneum-wallet-cli.
+
+Use the "help" command to see the list of available commands.
+**********************************************************************[0m
+2018-03-12 04:54:06.230	[P2P0]	INFO 	global	src/cryptonote_protocol/cryptonote_protocol_handler.inl:302	[46.101.40.29:54028 INC] Sync data returned a new top block candidate: 1 -> 6 [Your node is 5 blocks (0 days) behind] 
+SYNCHRONIZATION started
+2018-03-12 04:54:06.442	    7ffb11f02700	INFO 	msgwriter	src/common/scoped_message_writer.h:102	BH: 1, TH: a9e4744d0306b288fdd09feda538c0621f1fed478a5536029e330fb91d3a15d4, DIFF: 1, HR: 0 H/s
+2018-03-12 04:54:07.299	    7ffb11f02700	INFO 	msgwriter	src/common/scoped_message_writer.h:102	Height: 1/1 (100.0%) on mainnet, not mining, net hash 0 H/s, v6 (forking now), up to date, 3(out)+0(in) connections, uptime 0d 0h 0m 21s
+2018-03-12 04:54:18.086	[P2P5]	INFO 	global	src/cryptonote_protocol/cryptonote_protocol_handler.inl:302	[46.101.40.29:54040 INC] Sync data returned a new top block candidate: 1 -> 6 [Your node is 5 blocks (0 days) behind] 
+SYNCHRONIZATION started
+2018-03-12 04:54:18.823	[P2P1]	INFO 	global	src/cryptonote_protocol/cryptonote_protocol_handler.inl:1151	[1;33m[46.101.40.29:54040 INC]  Synced 6/6[0m
+2018-03-12 04:54:18.823	[P2P1]	INFO 	global	src/cryptonote_protocol/cryptonote_protocol_handler.inl:1518	[1;32mSYNCHRONIZED OK[0m
+2018-03-12 04:54:32.418	    7ffb11f02700	WARN 	miner	src/cryptonote_basic/miner.cpp:305	Mining has started with 2 threads, good luck!
+2018-03-12 04:54:32.418	[miner 0]	INFO 	global	src/cryptonote_basic/miner.cpp:416	Miner thread was started [0]
+2018-03-12 04:54:32.420	[miner 1]	INFO 	global	src/cryptonote_basic/miner.cpp:416	Miner thread was started [1]
+2018-03-12 04:54:40.061	    7ffb11f02700	INFO 	msgwriter	src/common/scoped_message_writer.h:102	BH: 6, TH: 9d437ef99e74cff70dd5f844f8c1d948da913ef37225c17ce0d67fd4a991d7d9, DIFF: 3712, HR: 61 H/s
+2018-03-12 04:54:40.868	    7ffb11f02700	INFO 	msgwriter	src/common/scoped_message_writer.h:102	Height: 6/6 (100.0%) on mainnet, mining at 57 H/s, net hash 61 H/s, v6, up to date, 4(out)+1(in) connections, uptime 0d 0h 0m 54s
+2018-03-12 04:55:19.944	[miner 1]	INFO 	global	src/cryptonote_basic/miner.cpp:470	[1;32mFound block for difficulty: 3712[0m
+2018-03-12 04:57:36.751	[miner 0]	INFO 	global	src/cryptonote_basic/miner.cpp:470	[1;32mFound block for difficulty: 3352[0m
+2018-03-12 04:58:01.771	[miner 1]	INFO 	global	src/cryptonote_basic/miner.cpp:470	[1;32mFound block for difficulty: 2876[0m
+2018-03-12 04:58:37.847	[miner 1]	INFO 	global	src/cryptonote_basic/miner.cpp:470	[1;32mFound block for difficulty: 3137[0m
+2018-03-12 04:58:47.226	[miner 1]	INFO 	global	src/cryptonote_basic/miner.cpp:470	[1;32mFound block for difficulty: 3310[0m
+2018-03-12 04:59:06.041	    7ffb11f02700	INFO 	msgwriter	src/common/scoped_message_writer.h:102	BH: 12, TH: ede1945f0af3ba86bb76a767268bd7e77fb1afe62c5bfb636143b058b862b49d, DIFF: 3668, HR: 61 H/s
+2018-03-12 04:59:06.852	    7ffb11f02700	INFO 	msgwriter	src/common/scoped_message_writer.h:102	Height: 12/12 (100.0%) on mainnet, mining at 58 H/s, net hash 61 H/s, v6, up to date, 4(out)+1(in) connections, uptime 0d 0h 5m 20s
+2018-03-12 04:59:41.288	[miner 0]	INFO 	global	src/cryptonote_basic/miner.cpp:470	[1;32mFound block for difficulty: 3668[0m
+2018-03-12 05:01:00.244	    7ffb11f02700	INFO 	msgwriter	src/common/scoped_message_writer.h:102	BH: 13, TH: 5248e6d49945d5d33c7796ffe06572b4d8aa17b4d0ca917b5ceb7500c59f4c72, DIFF: 3712, HR: 61 H/s
+2018-03-12 05:01:01.138	    7ffb11f02700	INFO 	msgwriter	src/common/scoped_message_writer.h:102	Height: 13/13 (100.0%) on mainnet, mining at 61 H/s, net hash 61 H/s, v6, up to date, 3(out)+1(in) connections, uptime 0d 0h 7m 15s
+2018-03-12 05:02:16.079	[miner 0]	INFO 	global	src/cryptonote_basic/miner.cpp:470	[1;32mFound block for difficulty: 3283[0m
+2018-03-12 05:03:23.334	[miner 0]	INFO 	global	src/cryptonote_basic/miner.cpp:470	[1;32mFound block for difficulty: 3501[0m
+2018-03-12 05:03:44.864	[miner 1]	INFO 	global	src/cryptonote_basic/miner.cpp:470	[1;32mFound block for difficulty: 3442[0m
+2018-03-12 05:03:45.544	[miner 1]	INFO 	global	src/cryptonote_basic/miner.cpp:470	[1;32mFound block for difficulty: 3638[0m
+2018-03-12 05:04:24.866	[miner 0]	INFO 	global	src/cryptonote_basic/miner.cpp:470	[1;32mFound block for difficulty: 3918[0m
+2018-03-12 05:06:51.908	    7ffb11f02700	INFO 	msgwriter	src/common/scoped_message_writer.h:102	BH: 19, TH: 722f89f3139137caf0fea0b8664c75d4c6e6a36cb6826e92908258f8b84737c9, DIFF: 4023, HR: 67 H/s
+2018-03-12 05:06:52.760	    7ffb11f02700	INFO 	msgwriter	src/common/scoped_message_writer.h:102	Height: 19/19 (100.0%) on mainnet, mining at 57 H/s, net hash 67 H/s, v6, up to date, 3(out)+1(in) connections, uptime 0d 0h 13m 6s
+2018-03-12 05:06:56.304	    7ffb11f02700	INFO 	msgwriter	src/common/scoped_message_writer.h:102	timestamp: 1520831063
+previous hash: b739578fda63afad2806136cb8a4186feff9374595eda51a01162c706554e1b9
+nonce: 2162559629
+is orphan: 0
+height: 18
+depth: 0
+hash: 722f89f3139137caf0fea0b8664c75d4c6e6a36cb6826e92908258f8b84737c9
+difficulty: 3918
+reward: 1242242242242242
+2018-03-12 05:06:56.304	    7ffb11f02700	INFO 	msgwriter	src/common/scoped_message_writer.h:102	{
+  "major_version": 6, 
+  "minor_version": 6, 
+  "timestamp": 1520831063, 
+  "prev_id": "b739578fda63afad2806136cb8a4186feff9374595eda51a01162c706554e1b9", 
+  "nonce": 2162559629, 
+  "miner_tx": {
+    "version": 2, 
+    "unlock_time": 28, 
+    "vin": [ {
+        "gen": {
+          "height": 18
+        }
+      }
+    ], 
+    "vout": [ {
+        "amount": 1242242242242242, 
+        "target": {
+          "key": "a144a92ac68655238464de49c1af55140b8d2e2556eebbe08ddd26d9590fada3"
+        }
+      }
+    ], 
+    "extra": [ 1, 139, 19, 219, 245, 11, 3, 49, 153, 190, 91, 5, 57, 30, 222, 94, 233, 32, 199, 250, 141, 104, 116, 109, 40, 140, 88, 195, 3, 222, 26, 47, 12
+    ], 
+    "rct_signatures": {
+      "type": 0
+    }
+  }, 
+  "tx_hashes": [ ]
+}
+
+2018-03-12 05:07:54.714	    7ffb11f02700	INFO 	msgwriter	src/common/scoped_message_writer.h:102	BH: 19, TH: 722f89f3139137caf0fea0b8664c75d4c6e6a36cb6826e92908258f8b84737c9, DIFF: 4023, HR: 67 H/s
+2018-03-12 05:07:55.504	    7ffb11f02700	INFO 	msgwriter	src/common/scoped_message_writer.h:102	Height: 19/19 (100.0%) on mainnet, mining at 59 H/s, net hash 67 H/s, v6, up to date, 3(out)+1(in) connections, uptime 0d 0h 14m 9s
+2018-03-12 05:07:55.968	    7ffb11f02700	INFO 	msgwriter	src/common/scoped_message_writer.h:102	Blockchain saved
+2018-03-12 05:08:10.279	[miner 0]	INFO 	global	src/cryptonote_basic/miner.cpp:470	[1;32mFound block for difficulty: 4023[0m
+2018-03-12 05:08:10.493	[miner 0]	INFO 	global	src/cryptonote_basic/miner.cpp:470	[1;32mFound block for difficulty: 3373[0m
+2018-03-12 05:09:01.779	[miner 1]	INFO 	global	src/cryptonote_basic/miner.cpp:470	[1;32mFound block for difficulty: 3557[0m
+2018-03-12 05:09:15.515	[miner 0]	INFO 	global	src/cryptonote_basic/miner.cpp:470	[1;32mFound block for difficulty: 3594[0m
+2018-03-12 05:10:18.701	[miner 1]	INFO 	global	src/cryptonote_basic/miner.cpp:470	[1;32mFound block for difficulty: 3756[0m
+2018-03-12 05:10:56.170	[miner 1]	INFO 	global	src/cryptonote_basic/miner.cpp:470	[1;32mFound block for difficulty: 3736[0m
+2018-03-12 05:12:33.172	[miner 0]	INFO 	global	src/cryptonote_basic/miner.cpp:470	[1;32mFound block for difficulty: 3813[0m
+2018-03-12 05:13:29.786	    7ffb11f02700	INFO 	msgwriter	src/common/scoped_message_writer.h:102	BH: 26, TH: 8b3e472efc5acb49bc9c756d2adc9d8fc2b8d80ab6e54de514139fdfe5d856c9, DIFF: 3704, HR: 61 H/s
+2018-03-12 05:13:31.451	    7ffb11f02700	INFO 	msgwriter	src/common/scoped_message_writer.h:102	Height: 26/26 (100.0%) on mainnet, mining at 58 H/s, net hash 61 H/s, v6, up to date, 2(out)+1(in) connections, uptime 0d 0h 19m 45s
+2018-03-12 05:13:44.134	[miner 0]	INFO 	global	src/cryptonote_basic/miner.cpp:485	Miner thread stopped [0]
+2018-03-12 05:13:44.166	[miner 1]	INFO 	global	src/cryptonote_basic/miner.cpp:485	Miner thread stopped [1]
+2018-03-12 05:13:44.166	    7ffb11f02700	INFO 	msgwriter	src/common/scoped_message_writer.h:102	Mining stopped
+2018-03-12 05:13:48.194	    7ffb11f02700	INFO 	msgwriter	src/common/scoped_message_writer.h:102	Stop signal sent
+2018-03-12 05:13:48.194	[SRV_MAIN]	INFO 	global	src/daemon/p2p.h:80	p2p net loop stopped
+2018-03-12 05:13:48.194	[SRV_MAIN]	INFO 	global	src/daemon/rpc.h:78	Stopping core rpc server...
+2018-03-12 05:13:48.195	[SRV_MAIN]	INFO 	global	src/daemon/daemon.cpp:145	Node stopped.
+2018-03-12 05:13:48.195	[SRV_MAIN]	INFO 	global	src/daemon/rpc.h:90	Deinitializing rpc server...
+2018-03-12 05:13:48.195	[SRV_MAIN]	INFO 	global	src/daemon/p2p.h:90	Deinitializing p2p...
+2018-03-12 05:13:49.045	[SRV_MAIN]	INFO 	global	src/daemon/core.h:89	Deinitializing core...
+2018-03-12 05:13:49.046	[SRV_MAIN]	INFO 	global	src/daemon/protocol.h:77	Stopping cryptonote protocol...
+2018-03-12 05:13:49.046	[SRV_MAIN]	INFO 	global	src/daemon/protocol.h:81	Cryptonote protocol stopped successfully
+2018-03-12 06:09:30.330	    7fab20536740	INFO 	logging	contrib/epee/src/mlog.cpp:148	New log categories: *:WARNING,net:FATAL,net.p2p:FATAL,net.cn:FATAL,global:INFO,verify:FATAL,stacktrace:INFO,logging:INFO,msgwriter:INFO
+2018-03-12 06:09:30.330	    7fab20536740	INFO 	global	src/daemon/main.cpp:279	Electroneum 'Helium Hydra' (v0.11.1.0-6d5e1be)
+2018-03-12 06:09:30.331	    7fab20536740	INFO 	global	src/daemon/protocol.h:55	Initializing cryptonote protocol...
+2018-03-12 06:09:30.332	    7fab20536740	INFO 	global	src/daemon/protocol.h:60	Cryptonote protocol initialized OK
+2018-03-12 06:09:30.332	    7fab20536740	INFO 	global	src/daemon/p2p.h:63	Initializing p2p server...
+2018-03-12 06:09:34.396	    7fab20536740	INFO 	global	src/daemon/p2p.h:68	P2p server initialized OK
+2018-03-12 06:09:34.397	    7fab20536740	INFO 	global	src/daemon/rpc.h:58	Initializing core rpc server...
+2018-03-12 06:09:34.397	    7fab20536740	INFO 	global	contrib/epee/include/net/http_server_impl_base.h:70	Binding on 127.0.0.1:48091
+2018-03-12 06:09:34.398	    7fab20536740	INFO 	global	src/daemon/rpc.h:63	Core rpc server initialized OK on port: 48091
+2018-03-12 06:09:34.398	    7fab20536740	INFO 	global	src/daemon/core.h:73	Initializing core...
+2018-03-12 06:09:34.398	    7fab20536740	INFO 	global	src/cryptonote_core/cryptonote_core.cpp:323	Loading blockchain from folder /root/.kryptonium/lmdb ...
+2018-03-12 06:09:34.400	    7fab20536740	INFO 	global	src/cryptonote_core/cryptonote_core.cpp:421	Loading checkpoints
+2018-03-12 06:09:34.409	    7fab20536740	INFO 	global	src/daemon/core.h:78	Core initialized OK
+2018-03-12 06:09:34.409	    7fab20536740	INFO 	global	src/daemon/rpc.h:68	Starting core rpc server...
+2018-03-12 06:09:34.410	[SRV_MAIN]	INFO 	global	src/daemon/rpc.h:73	Core rpc server started ok
+2018-03-12 06:09:34.411	[SRV_MAIN]	INFO 	global	src/daemon/p2p.h:78	Starting p2p net loop...
+2018-03-12 06:09:35.412	[P2P1]	INFO 	global	src/cryptonote_core/cryptonote_core.cpp:1258	[1;33m
+**********************************************************************
+The daemon will start synchronizing with the network. This may take a long time to complete.
+
+You can set the level of process detailization* through "set_log <level|categories>" command*,
+where <level> is between 0 (no details) and 4 (very verbose), or custom category based levels (eg, *:WARNING)
+
+Use the "help" command to see the list of available commands.
+**********************************************************************
+[0m
+2018-03-12 06:09:35.482	[P2P2]	INFO 	global	src/cryptonote_protocol/cryptonote_protocol_handler.inl:1540	[1;33m
+**********************************************************************
+You are now synchronized with the network. You may now start electroneum-wallet-cli.
+
+Use the "help" command to see the list of available commands.
+**********************************************************************[0m
+2018-03-12 06:20:18.258	[RPC1]	WARN 	daemon.rpc	src/rpc/core_rpc_server.cpp:628	[on_send_raw_tx]: tx verification failed
+2018-03-12 06:20:50.873	    7fab17154700	INFO 	msgwriter	src/common/scoped_message_writer.h:102	Stop signal sent
+2018-03-12 06:20:55.510	[SRV_MAIN]	INFO 	global	src/daemon/p2p.h:80	p2p net loop stopped
+2018-03-12 06:20:55.579	[SRV_MAIN]	INFO 	global	src/daemon/rpc.h:78	Stopping core rpc server...
+2018-03-12 06:20:55.580	[SRV_MAIN]	INFO 	global	src/daemon/daemon.cpp:145	Node stopped.
+2018-03-12 06:20:55.580	[SRV_MAIN]	INFO 	global	src/daemon/rpc.h:90	Deinitializing rpc server...
+2018-03-12 06:20:55.580	[SRV_MAIN]	INFO 	global	src/daemon/p2p.h:90	Deinitializing p2p...
+2018-03-12 06:20:55.581	[SRV_MAIN]	INFO 	global	src/daemon/core.h:89	Deinitializing core...
+2018-03-12 06:20:55.581	[SRV_MAIN]	INFO 	global	src/daemon/protocol.h:77	Stopping cryptonote protocol...
+2018-03-12 06:20:55.582	[SRV_MAIN]	INFO 	global	src/daemon/protocol.h:81	Cryptonote protocol stopped successfully
+2018-03-12 06:44:30.343	    7f077d38a740	INFO 	logging	contrib/epee/src/mlog.cpp:148	New log categories: *:WARNING,net:FATAL,net.p2p:FATAL,net.cn:FATAL,global:INFO,verify:FATAL,stacktrace:INFO,logging:INFO,msgwriter:INFO
+2018-03-12 06:44:30.343	    7f077d38a740	INFO 	global	src/daemon/main.cpp:279	Electroneum 'Helium Hydra' (v0.11.1.0-c721346)
+2018-03-12 06:44:30.344	    7f077d38a740	INFO 	global	src/daemon/protocol.h:55	Initializing cryptonote protocol...
+2018-03-12 06:44:30.344	    7f077d38a740	INFO 	global	src/daemon/protocol.h:60	Cryptonote protocol initialized OK
+2018-03-12 06:44:30.345	    7f077d38a740	INFO 	global	src/daemon/p2p.h:63	Initializing p2p server...
+2018-03-12 06:44:34.405	    7f077d38a740	INFO 	global	src/daemon/p2p.h:68	P2p server initialized OK
+2018-03-12 06:44:34.406	    7f077d38a740	INFO 	global	src/daemon/rpc.h:58	Initializing core rpc server...
+2018-03-12 06:44:34.406	    7f077d38a740	INFO 	global	contrib/epee/include/net/http_server_impl_base.h:70	Binding on 127.0.0.1:48091
+2018-03-12 06:44:34.406	    7f077d38a740	INFO 	global	src/daemon/rpc.h:63	Core rpc server initialized OK on port: 48091
+2018-03-12 06:44:34.407	    7f077d38a740	INFO 	global	src/daemon/core.h:73	Initializing core...
+2018-03-12 06:44:34.407	    7f077d38a740	INFO 	global	src/cryptonote_core/cryptonote_core.cpp:323	Loading blockchain from folder /root/.kryptonium/lmdb ...
+2018-03-12 06:44:34.408	    7f077d38a740	INFO 	global	src/cryptonote_core/cryptonote_core.cpp:421	Loading checkpoints
+2018-03-12 06:44:34.448	    7f077d38a740	INFO 	global	src/daemon/core.h:78	Core initialized OK
+2018-03-12 06:44:34.448	    7f077d38a740	INFO 	global	src/daemon/rpc.h:68	Starting core rpc server...
+2018-03-12 06:44:34.449	[SRV_MAIN]	INFO 	global	src/daemon/rpc.h:73	Core rpc server started ok
+2018-03-12 06:44:34.449	[SRV_MAIN]	INFO 	global	src/daemon/p2p.h:78	Starting p2p net loop...
+2018-03-12 06:44:35.450	[P2P1]	INFO 	global	src/cryptonote_core/cryptonote_core.cpp:1258	[1;33m
+**********************************************************************
+The daemon will start synchronizing with the network. This may take a long time to complete.
+
+You can set the level of process detailization* through "set_log <level|categories>" command*,
+where <level> is between 0 (no details) and 4 (very verbose), or custom category based levels (eg, *:WARNING)
+
+Use the "help" command to see the list of available commands.
+**********************************************************************
+[0m
+2018-03-12 06:44:35.521	[P2P2]	INFO 	global	src/cryptonote_protocol/cryptonote_protocol_handler.inl:1540	[1;33m
+**********************************************************************
+You are now synchronized with the network. You may now start electroneum-wallet-cli.
+
+Use the "help" command to see the list of available commands.
+**********************************************************************[0m
+2018-03-12 06:44:37.615	    7f0767e67700	INFO 	msgwriter	src/common/scoped_message_writer.h:102	BH: 26, TH: 8b3e472efc5acb49bc9c756d2adc9d8fc2b8d80ab6e54de514139fdfe5d856c9, DIFF: 3704, HR: 61 H/s
+2018-03-12 06:44:38.463	    7f0767e67700	INFO 	msgwriter	src/common/scoped_message_writer.h:102	Height: 26/26 (100.0%) on mainnet, not mining, net hash 61 H/s, v6, up to date, 1(out)+0(in) connections, uptime 0d 0h 0m 4s
+2018-03-12 06:44:39.092	    7f0767e67700	INFO 	msgwriter	src/common/scoped_message_writer.h:102	Blockchain saved
+2018-03-12 06:44:39.953	    7f0767e67700	INFO 	msgwriter	src/common/scoped_message_writer.h:102	Stop signal sent
+2018-03-12 06:44:42.594	[SRV_MAIN]	INFO 	global	src/daemon/p2p.h:80	p2p net loop stopped
+2018-03-12 06:44:42.657	[SRV_MAIN]	INFO 	global	src/daemon/rpc.h:78	Stopping core rpc server...
+2018-03-12 06:44:42.658	[SRV_MAIN]	INFO 	global	src/daemon/daemon.cpp:145	Node stopped.
+2018-03-12 06:44:42.658	[SRV_MAIN]	INFO 	global	src/daemon/rpc.h:90	Deinitializing rpc server...
+2018-03-12 06:44:42.658	[SRV_MAIN]	INFO 	global	src/daemon/p2p.h:90	Deinitializing p2p...
+2018-03-12 06:44:42.659	[SRV_MAIN]	INFO 	global	src/daemon/core.h:89	Deinitializing core...
+2018-03-12 06:44:42.659	[SRV_MAIN]	INFO 	global	src/daemon/protocol.h:77	Stopping cryptonote protocol...
+2018-03-12 06:44:42.660	[SRV_MAIN]	INFO 	global	src/daemon/protocol.h:81	Cryptonote protocol stopped successfully
+2018-03-12 06:44:52.679	    7f93d8acf740	INFO 	logging	contrib/epee/src/mlog.cpp:148	New log categories: *:WARNING,net:FATAL,net.p2p:FATAL,net.cn:FATAL,global:INFO,verify:FATAL,stacktrace:INFO,logging:INFO,msgwriter:INFO
+2018-03-12 06:44:52.680	    7f93d8acf740	INFO 	global	src/daemon/main.cpp:279	Electroneum 'Helium Hydra' (v0.11.1.0-c721346)
+2018-03-12 06:44:52.680	    7f93d8acf740	INFO 	global	src/daemon/protocol.h:55	Initializing cryptonote protocol...
+2018-03-12 06:44:52.680	    7f93d8acf740	INFO 	global	src/daemon/protocol.h:60	Cryptonote protocol initialized OK
+2018-03-12 06:44:52.680	    7f93d8acf740	INFO 	global	src/daemon/p2p.h:63	Initializing p2p server...
+2018-03-12 06:44:56.715	    7f93d8acf740	INFO 	global	src/daemon/p2p.h:68	P2p server initialized OK
+2018-03-12 06:44:56.716	    7f93d8acf740	INFO 	global	src/daemon/rpc.h:58	Initializing core rpc server...
+2018-03-12 06:44:56.716	    7f93d8acf740	INFO 	global	contrib/epee/include/net/http_server_impl_base.h:70	Binding on 127.0.0.1:48091
+2018-03-12 06:44:56.716	    7f93d8acf740	INFO 	global	src/daemon/rpc.h:63	Core rpc server initialized OK on port: 48091
+2018-03-12 06:44:56.716	    7f93d8acf740	INFO 	global	src/daemon/core.h:73	Initializing core...
+2018-03-12 06:44:56.716	    7f93d8acf740	INFO 	global	src/cryptonote_core/cryptonote_core.cpp:323	Loading blockchain from folder /root/.kryptonium/lmdb ...
+2018-03-12 06:44:56.717	    7f93d8acf740	INFO 	global	src/cryptonote_core/cryptonote_core.cpp:421	Loading checkpoints
+2018-03-12 06:44:56.729	    7f93d8acf740	INFO 	global	src/daemon/core.h:78	Core initialized OK
+2018-03-12 06:44:56.729	    7f93d8acf740	INFO 	global	src/daemon/rpc.h:68	Starting core rpc server...
+2018-03-12 06:44:56.729	[SRV_MAIN]	INFO 	global	src/daemon/rpc.h:73	Core rpc server started ok
+2018-03-12 06:44:56.729	[SRV_MAIN]	INFO 	global	src/daemon/p2p.h:78	Starting p2p net loop...
+2018-03-12 06:44:57.730	[P2P1]	INFO 	global	src/cryptonote_core/cryptonote_core.cpp:1258	[1;33m
+**********************************************************************
+The daemon will start synchronizing with the network. This may take a long time to complete.
+
+You can set the level of process detailization* through "set_log <level|categories>" command*,
+where <level> is between 0 (no details) and 4 (very verbose), or custom category based levels (eg, *:WARNING)
+
+Use the "help" command to see the list of available commands.
+**********************************************************************
+[0m
+2018-03-12 06:44:57.801	[P2P2]	INFO 	global	src/cryptonote_protocol/cryptonote_protocol_handler.inl:1540	[1;33m
+**********************************************************************
+You are now synchronized with the network. You may now start electroneum-wallet-cli.
+
+Use the "help" command to see the list of available commands.
+**********************************************************************[0m
+2018-03-12 07:00:17.711	[SRV_MAIN]	INFO 	global	src/daemon/p2p.h:80	p2p net loop stopped
+2018-03-12 07:00:17.761	[SRV_MAIN]	INFO 	global	src/daemon/rpc.h:78	Stopping core rpc server...
+2018-03-12 07:00:17.761	[SRV_MAIN]	INFO 	global	src/daemon/daemon.cpp:145	Node stopped.
+2018-03-12 07:00:17.761	[SRV_MAIN]	INFO 	global	src/daemon/rpc.h:90	Deinitializing rpc server...
+2018-03-12 07:00:17.761	[SRV_MAIN]	INFO 	global	src/daemon/p2p.h:90	Deinitializing p2p...
+2018-03-12 07:00:18.661	[SRV_MAIN]	INFO 	global	src/daemon/core.h:89	Deinitializing core...
+2018-03-12 07:00:18.661	[SRV_MAIN]	INFO 	global	src/daemon/protocol.h:77	Stopping cryptonote protocol...
+2018-03-12 07:00:18.661	[SRV_MAIN]	INFO 	global	src/daemon/protocol.h:81	Cryptonote protocol stopped successfully
+2018-03-12 07:13:44.041	    7f293caec740	INFO 	logging	contrib/epee/src/mlog.cpp:148	New log categories: *:WARNING,net:FATAL,net.p2p:FATAL,net.cn:FATAL,global:INFO,verify:FATAL,stacktrace:INFO,logging:INFO,msgwriter:INFO
+2018-03-12 07:13:44.041	    7f293caec740	INFO 	global	src/daemon/main.cpp:279	Electroneum 'Helium Hydra' (v0.11.1.0-c721346)
+2018-03-12 07:13:44.042	    7f293caec740	INFO 	global	src/daemon/protocol.h:55	Initializing cryptonote protocol...
+2018-03-12 07:13:44.042	    7f293caec740	INFO 	global	src/daemon/protocol.h:60	Cryptonote protocol initialized OK
+2018-03-12 07:13:44.043	    7f293caec740	INFO 	global	src/daemon/p2p.h:63	Initializing p2p server...
+2018-03-12 07:13:44.125	    7f293caec740	INFO 	stacktrace	src/common/stack_trace.cpp:120	Exception: boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::system::system_error> >
+2018-03-12 07:13:44.125	    7f293caec740	INFO 	stacktrace	src/common/stack_trace.cpp:121	Unwound call stack:
+2018-03-12 07:13:44.126	    7f293caec740	INFO 	stacktrace	src/common/stack_trace.cpp:159	    [1] ./kryptoniumd:__cxa_throw+0x106 [0x7cc0f6]
+2018-03-12 07:13:44.126	    7f293caec740	INFO 	stacktrace	src/common/stack_trace.cpp:159	    [2] ./kryptoniumd:void boost::throw_exception<boost::system::system_error>(boost::system::system_error const&)+0x1d1 [0x586781]
+2018-03-12 07:13:44.126	    7f293caec740	INFO 	stacktrace	src/common/stack_trace.cpp:159	    [3] ./kryptoniumd:boost::asio::detail::do_throw_error(boost::system::error_code const&, char const*)+0x55 [0x586865]
+2018-03-12 07:13:44.126	    7f293caec740	INFO 	stacktrace	src/common/stack_trace.cpp:159	    [4] ./kryptoniumd:boost::asio::basic_socket_acceptor<boost::asio::ip::tcp, boost::asio::socket_acceptor_service<boost::asio::ip::tcp> >::bind(boost::asio::ip::basic_endpoint<boost::asio::ip::tcp> const&)+0x8d [0x5a42cd]
+2018-03-12 07:13:44.126	    7f293caec740	INFO 	stacktrace	src/common/stack_trace.cpp:159	    [5] ./kryptoniumd:epee::net_utils::boosted_tcp_server<epee::levin::async_protocol_handler<nodetool::p2p_connection_context_t<cryptonote::cryptonote_connection_context> > >::init_server(unsigned int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)+0x35c [0x663b6c]
+2018-03-12 07:13:44.126	    7f293caec740	INFO 	stacktrace	src/common/stack_trace.cpp:159	    [6] ./kryptoniumd:epee::net_utils::boosted_tcp_server<epee::levin::async_protocol_handler<nodetool::p2p_connection_context_t<cryptonote::cryptonote_connection_context> > >::init_server(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x71 [0x6644f1]
+2018-03-12 07:13:44.126	    7f293caec740	INFO 	stacktrace	src/common/stack_trace.cpp:159	    [7] ./kryptoniumd:nodetool::node_server<cryptonote::t_cryptonote_protocol_handler<cryptonote::core> >::init(boost::program_options::variables_map const&)+0x17ea [0x665f5a]
+2018-03-12 07:13:44.126	    7f293caec740	INFO 	stacktrace	src/common/stack_trace.cpp:159	    [8] ./kryptoniumd:daemonize::t_p2p::t_p2p(boost::program_options::variables_map const&, daemonize::t_protocol&)+0x4d9 [0x667979]
+2018-03-12 07:13:44.126	    7f293caec740	INFO 	stacktrace	src/common/stack_trace.cpp:159	    [9] ./kryptoniumd:daemonize::t_daemon::t_daemon(boost::program_options::variables_map const&)+0x4ee [0x572c2e]
+2018-03-12 07:13:44.126	    7f293caec740	INFO 	stacktrace	src/common/stack_trace.cpp:159	    [10] ./kryptoniumd:daemonize::t_executor::run_interactive(boost::program_options::variables_map const&)+0x1d [0x67a53d]
+2018-03-12 07:13:44.126	    7f293caec740	INFO 	stacktrace	src/common/stack_trace.cpp:159	    [11] ./kryptoniumd:bool daemonizer::daemonize<daemonize::t_executor>(int, char const**, daemonize::t_executor&&, boost::program_options::variables_map const&)+0x17c [0x67c93c]
+2018-03-12 07:13:44.126	    7f293caec740	INFO 	stacktrace	src/common/stack_trace.cpp:159	    [12] ./kryptoniumd:main+0x14be [0x54804e]
+2018-03-12 07:13:44.126	    7f293caec740	INFO 	stacktrace	src/common/stack_trace.cpp:159	    [13] /lib/x86_64-linux-gnu/libc.so.6:__libc_start_main+0xf0 [0x7f2939e15830]
+2018-03-12 07:13:44.126	    7f293caec740	INFO 	stacktrace	src/common/stack_trace.cpp:159	    [14] ./kryptoniumd:_start+0x29 [0x54f279]
+2018-03-12 07:13:44.126	    7f293caec740	INFO 	stacktrace	src/common/stack_trace.cpp:159	
+2018-03-12 07:13:44.127	    7f293caec740	INFO 	stacktrace	src/common/stack_trace.cpp:120	Exception: std::runtime_error
+2018-03-12 07:13:44.127	    7f293caec740	INFO 	stacktrace	src/common/stack_trace.cpp:121	Unwound call stack:
+2018-03-12 07:13:44.127	    7f293caec740	INFO 	stacktrace	src/common/stack_trace.cpp:159	    [1] ./kryptoniumd:__cxa_throw+0x106 [0x7cc0f6]
+2018-03-12 07:13:44.127	    7f293caec740	INFO 	stacktrace	src/common/stack_trace.cpp:159	    [2] ./kryptoniumd:daemonize::t_p2p::t_p2p(boost::program_options::variables_map const&, daemonize::t_protocol&)+0x655 [0x667af5]
+2018-03-12 07:13:44.127	    7f293caec740	INFO 	stacktrace	src/common/stack_trace.cpp:159	    [3] ./kryptoniumd:daemonize::t_daemon::t_daemon(boost::program_options::variables_map const&)+0x4ee [0x572c2e]
+2018-03-12 07:13:44.127	    7f293caec740	INFO 	stacktrace	src/common/stack_trace.cpp:159	    [4] ./kryptoniumd:daemonize::t_executor::run_interactive(boost::program_options::variables_map const&)+0x1d [0x67a53d]
+2018-03-12 07:13:44.127	    7f293caec740	INFO 	stacktrace	src/common/stack_trace.cpp:159	    [5] ./kryptoniumd:bool daemonizer::daemonize<daemonize::t_executor>(int, char const**, daemonize::t_executor&&, boost::program_options::variables_map const&)+0x17c [0x67c93c]
+2018-03-12 07:13:44.127	    7f293caec740	INFO 	stacktrace	src/common/stack_trace.cpp:159	    [6] ./kryptoniumd:main+0x14be [0x54804e]
+2018-03-12 07:13:44.127	    7f293caec740	INFO 	stacktrace	src/common/stack_trace.cpp:159	    [7] /lib/x86_64-linux-gnu/libc.so.6:__libc_start_main+0xf0 [0x7f2939e15830]
+2018-03-12 07:13:44.127	    7f293caec740	INFO 	stacktrace	src/common/stack_trace.cpp:159	    [8] ./kryptoniumd:_start+0x29 [0x54f279]
+2018-03-12 07:13:44.127	    7f293caec740	INFO 	stacktrace	src/common/stack_trace.cpp:159	
+2018-03-12 07:13:44.127	    7f293caec740	INFO 	global	src/daemon/core.h:89	Deinitializing core...
+2018-03-12 07:13:44.128	    7f293caec740	INFO 	stacktrace	src/common/stack_trace.cpp:120	Exception: cryptonote::DB_ERROR*
+2018-03-12 07:13:44.128	    7f293caec740	INFO 	stacktrace	src/common/stack_trace.cpp:121	Unwound call stack:
+2018-03-12 07:13:44.129	    7f293caec740	INFO 	stacktrace	src/common/stack_trace.cpp:159	    [1] ./kryptoniumd:__cxa_throw+0x106 [0x7cc0f6]
+2018-03-12 07:13:44.129	    7f293caec740	INFO 	stacktrace	src/common/stack_trace.cpp:159	    [2] ./kryptoniumd:cryptonote::Blockchain::deinit()+0x496 [0x73a6e6]
+2018-03-12 07:13:44.129	    7f293caec740	INFO 	stacktrace	src/common/stack_trace.cpp:159	    [3] ./kryptoniumd:cryptonote::core::deinit()+0x25 [0x7669a5]
+2018-03-12 07:13:44.129	    7f293caec740	INFO 	stacktrace	src/common/stack_trace.cpp:159	    [4] ./kryptoniumd:daemonize::t_core::~t_core()+0xcb [0x590ceb]
+2018-03-12 07:13:44.129	    7f293caec740	INFO 	stacktrace	src/common/stack_trace.cpp:159	    [5] ./kryptoniumd:daemonize::t_daemon::t_daemon(boost::program_options::variables_map const&)+0x7f7 [0x572f37]
+2018-03-12 07:13:44.129	    7f293caec740	INFO 	stacktrace	src/common/stack_trace.cpp:159	    [6] ./kryptoniumd:daemonize::t_executor::run_interactive(boost::program_options::variables_map const&)+0x1d [0x67a53d]
+2018-03-12 07:13:44.129	    7f293caec740	INFO 	stacktrace	src/common/stack_trace.cpp:159	    [7] ./kryptoniumd:bool daemonizer::daemonize<daemonize::t_executor>(int, char const**, daemonize::t_executor&&, boost::program_options::variables_map const&)+0x17c [0x67c93c]
+2018-03-12 07:13:44.129	    7f293caec740	INFO 	stacktrace	src/common/stack_trace.cpp:159	    [8] ./kryptoniumd:main+0x14be [0x54804e]
+2018-03-12 07:13:44.129	    7f293caec740	INFO 	stacktrace	src/common/stack_trace.cpp:159	    [9] /lib/x86_64-linux-gnu/libc.so.6:__libc_start_main+0xf0 [0x7f2939e15830]
+2018-03-12 07:13:44.129	    7f293caec740	INFO 	stacktrace	src/common/stack_trace.cpp:159	    [10] ./kryptoniumd:_start+0x29 [0x54f279]
+2018-03-12 07:13:44.129	    7f293caec740	INFO 	stacktrace	src/common/stack_trace.cpp:159	
+2018-03-12 07:13:44.129	    7f293caec740	ERROR	daemon	src/daemon/core.h:94	Failed to deinitialize core...
+2018-03-12 07:13:44.140	    7f293caec740	INFO 	global	src/daemon/protocol.h:77	Stopping cryptonote protocol...
+2018-03-12 07:13:44.141	    7f293caec740	INFO 	global	src/daemon/protocol.h:81	Cryptonote protocol stopped successfully
+2018-03-12 07:13:44.141	    7f293caec740	ERROR	daemon	src/daemon/main.cpp:287	Exception in main! Failed to initialize p2p server.
+2018-03-12 07:14:16.197	    7efd37750740	INFO 	logging	contrib/epee/src/mlog.cpp:148	New log categories: *:WARNING,net:FATAL,net.p2p:FATAL,net.cn:FATAL,global:INFO,verify:FATAL,stacktrace:INFO,logging:INFO,msgwriter:INFO
+2018-03-12 07:14:16.197	    7efd37750740	INFO 	global	src/daemon/main.cpp:279	Electroneum 'Helium Hydra' (v0.11.1.0-c721346)
+2018-03-12 07:14:16.198	    7efd37750740	INFO 	global	src/daemon/protocol.h:55	Initializing cryptonote protocol...
+2018-03-12 07:14:16.198	    7efd37750740	INFO 	global	src/daemon/protocol.h:60	Cryptonote protocol initialized OK
+2018-03-12 07:14:16.198	    7efd37750740	INFO 	global	src/daemon/p2p.h:63	Initializing p2p server...
+2018-03-12 07:14:20.276	    7efd37750740	INFO 	global	src/daemon/p2p.h:68	P2p server initialized OK
+2018-03-12 07:14:20.276	    7efd37750740	INFO 	global	src/daemon/rpc.h:58	Initializing core rpc server...
+2018-03-12 07:14:20.276	    7efd37750740	INFO 	global	contrib/epee/include/net/http_server_impl_base.h:70	Binding on 127.0.0.1:48091
+2018-03-12 07:14:20.276	    7efd37750740	INFO 	global	src/daemon/rpc.h:63	Core rpc server initialized OK on port: 48091
+2018-03-12 07:14:20.276	    7efd37750740	INFO 	global	src/daemon/core.h:73	Initializing core...
+2018-03-12 07:14:20.277	    7efd37750740	INFO 	global	src/cryptonote_core/cryptonote_core.cpp:323	Loading blockchain from folder /root/.kryptonium/lmdb ...
+2018-03-12 07:14:20.280	    7efd37750740	INFO 	global	src/cryptonote_core/cryptonote_core.cpp:421	Loading checkpoints
+2018-03-12 07:14:20.288	    7efd37750740	INFO 	global	src/daemon/core.h:78	Core initialized OK
+2018-03-12 07:14:20.288	    7efd37750740	INFO 	global	src/daemon/rpc.h:68	Starting core rpc server...
+2018-03-12 07:14:20.289	[SRV_MAIN]	INFO 	global	src/daemon/rpc.h:73	Core rpc server started ok
+2018-03-12 07:14:20.289	[SRV_MAIN]	INFO 	global	src/daemon/p2p.h:78	Starting p2p net loop...
+2018-03-12 07:14:20.320	[P2P0]	INFO 	global	src/cryptonote_protocol/cryptonote_protocol_handler.inl:1540	[1;33m
+**********************************************************************
+You are now synchronized with the network. You may now start electroneum-wallet-cli.
+
+Use the "help" command to see the list of available commands.
+**********************************************************************[0m
+2018-03-12 07:14:21.290	[P2P7]	INFO 	global	src/cryptonote_core/cryptonote_core.cpp:1258	[1;33m
+**********************************************************************
+The daemon will start synchronizing with the network. This may take a long time to complete.
+
+You can set the level of process detailization* through "set_log <level|categories>" command*,
+where <level> is between 0 (no details) and 4 (very verbose), or custom category based levels (eg, *:WARNING)
+
+Use the "help" command to see the list of available commands.
+**********************************************************************
+[0m
+2018-03-12 07:14:26.230	    7efd2eb6f700	INFO 	msgwriter	src/common/scoped_message_writer.h:102	BH: 26, TH: 8b3e472efc5acb49bc9c756d2adc9d8fc2b8d80ab6e54de514139fdfe5d856c9, DIFF: 3704, HR: 61 H/s
+2018-03-12 07:14:32.394	    7efd2eb6f700	INFO 	msgwriter	src/common/scoped_message_writer.h:102	BH: 26, TH: 8b3e472efc5acb49bc9c756d2adc9d8fc2b8d80ab6e54de514139fdfe5d856c9, DIFF: 3704, HR: 61 H/s
+2018-03-12 07:14:33.556	    7efd2eb6f700	INFO 	msgwriter	src/common/scoped_message_writer.h:102	Height: 26/26 (100.0%) on mainnet, not mining, net hash 61 H/s, v6, up to date, 4(out)+0(in) connections, uptime 0d 0h 0m 13s
+2018-03-12 07:15:25.785	    7efd2eb6f700	ERROR	net.dns	src/common/dns_utils.cpp:407	wrong address: KYhLGXEJtpTDHxEXH18mfeVQHHEzo8kkHNmkwd6DSmmCPNPeJjJAzCyEsARfmNS8R
+2018-03-12 07:16:02.948	    7efd2eb6f700	WARN 	miner	src/cryptonote_basic/miner.cpp:305	Mining has started with 4 threads, good luck!
+2018-03-12 07:16:02.960	[miner 0]	INFO 	global	src/cryptonote_basic/miner.cpp:416	Miner thread was started [0]
+2018-03-12 07:16:02.968	[miner 1]	INFO 	global	src/cryptonote_basic/miner.cpp:416	Miner thread was started [1]
+2018-03-12 07:16:02.980	[miner 2]	INFO 	global	src/cryptonote_basic/miner.cpp:416	Miner thread was started [2]
+2018-03-12 07:16:02.984	[miner 3]	INFO 	global	src/cryptonote_basic/miner.cpp:416	Miner thread was started [3]
+2018-03-12 07:16:13.095	    7efd2eb6f700	INFO 	msgwriter	src/common/scoped_message_writer.h:102	BH: 26, TH: 8b3e472efc5acb49bc9c756d2adc9d8fc2b8d80ab6e54de514139fdfe5d856c9, DIFF: 3704, HR: 61 H/s
+2018-03-12 07:16:14.112	    7efd2eb6f700	INFO 	msgwriter	src/common/scoped_message_writer.h:102	Height: 26/26 (100.0%) on mainnet, mining at 51 H/s, net hash 61 H/s, v6, up to date, 3(out)+0(in) connections, uptime 0d 0h 1m 54s
+2018-03-12 07:16:14.720	    7efd2eb6f700	INFO 	msgwriter	src/common/scoped_message_writer.h:102	Blockchain saved
+2018-03-12 07:16:22.228	    7efd2eb6f700	INFO 	msgwriter	src/common/scoped_message_writer.h:102	Height: 26, target: 26 (100%)
+2018-03-12 07:16:22.228	    7efd2eb6f700	INFO 	msgwriter	src/common/scoped_message_writer.h:102	Downloading at 0 kB/s
+2018-03-12 07:16:22.228	    7efd2eb6f700	INFO 	msgwriter	src/common/scoped_message_writer.h:102	2 peers
+2018-03-12 07:16:22.228	    7efd2eb6f700	INFO 	msgwriter	src/common/scoped_message_writer.h:102	46.101.40.29:48000        0000000000000000  0  0 kB/s, 0 blocks / 0 MB queued
+2018-03-12 07:16:22.228	    7efd2eb6f700	INFO 	msgwriter	src/common/scoped_message_writer.h:102	165.227.189.226:48000     0000000000000000  0  0 kB/s, 0 blocks / 0 MB queued
+2018-03-12 07:16:22.228	    7efd2eb6f700	INFO 	msgwriter	src/common/scoped_message_writer.h:102	0 spans, 0 MB
+2018-03-12 07:16:23.152	    7efd2eb6f700	INFO 	msgwriter	src/common/scoped_message_writer.h:102	Blockchain saved
+2018-03-12 07:16:32.223	[miner 2]	INFO 	global	src/cryptonote_basic/miner.cpp:470	[1;32mFound block for difficulty: 3704[0m
+2018-03-12 07:16:35.852	[miner 3]	INFO 	global	src/cryptonote_basic/miner.cpp:470	[1;32mFound block for difficulty: 565[0m
+2018-03-12 07:16:42.597	[miner 0]	INFO 	global	src/cryptonote_basic/miner.cpp:470	[1;32mFound block for difficulty: 569[0m
+2018-03-12 07:16:44.628	[miner 3]	INFO 	global	src/cryptonote_basic/miner.cpp:470	[1;32mFound block for difficulty: 572[0m
+2018-03-12 07:16:55.720	[miner 3]	INFO 	global	src/cryptonote_basic/miner.cpp:470	[1;32mFound block for difficulty: 576[0m
+2018-03-12 07:17:07.093	[miner 1]	INFO 	global	src/cryptonote_basic/miner.cpp:470	[1;32mFound block for difficulty: 579[0m
+2018-03-12 07:17:10.008	    7efd2eb6f700	INFO 	msgwriter	src/common/scoped_message_writer.h:102	BH: 32, TH: a9ac2cc81a728b7f73b4295625110fe31cf803a453d43261ef18ad07cc395928, DIFF: 582, HR: 9 H/s
+2018-03-12 07:17:10.784	    7efd2eb6f700	INFO 	msgwriter	src/common/scoped_message_writer.h:102	Height: 32/32 (100.0%) on mainnet, mining at 48 H/s, net hash 9 H/s, v6, up to date, 4(out)+1(in) connections, uptime 0d 0h 2m 50s
+2018-03-12 07:17:14.996	[miner 2]	INFO 	global	src/cryptonote_basic/miner.cpp:470	[1;32mFound block for difficulty: 582[0m
+2018-03-12 07:17:17.408	    7efd2eb6f700	INFO 	msgwriter	src/common/scoped_message_writer.h:102	Pool is empty
+
+2018-03-12 07:17:23.464	    7efd2eb6f700	INFO 	msgwriter	src/common/scoped_message_writer.h:102	BH: 33, TH: a6e0c3ddc0e96c38307a78f185018c3a203bf66e0bac270f7f65db0fd6a61c86, DIFF: 586, HR: 9 H/s
+2018-03-12 07:17:24.566	    7efd2eb6f700	INFO 	msgwriter	src/common/scoped_message_writer.h:102	Height: 33/33 (100.0%) on mainnet, mining at 47 H/s, net hash 9 H/s, v6, up to date, 4(out)+1(in) connections, uptime 0d 0h 3m 4s
+2018-03-12 07:17:25.126	    7efd2eb6f700	INFO 	msgwriter	src/common/scoped_message_writer.h:102	Blockchain saved
+2018-03-12 07:17:27.730	[miner 0]	INFO 	global	src/cryptonote_basic/miner.cpp:470	[1;32mFound block for difficulty: 586[0m
+2018-03-12 07:17:31.971	[miner 3]	INFO 	global	src/cryptonote_basic/miner.cpp:470	[1;32mFound block for difficulty: 589[0m
+2018-03-12 07:17:35.121	[miner 2]	INFO 	global	src/cryptonote_basic/miner.cpp:470	[1;32mFound block for difficulty: 593[0m
+2018-03-12 07:17:35.943	[miner 2]	INFO 	global	src/cryptonote_basic/miner.cpp:470	[1;32mFound block for difficulty: 596[0m
+2018-03-12 07:17:44.838	[miner 2]	INFO 	global	src/cryptonote_basic/miner.cpp:470	[1;32mFound block for difficulty: 600[0m
+2018-03-12 07:17:59.605	[miner 0]	INFO 	global	src/cryptonote_basic/miner.cpp:470	[1;32mFound block for difficulty: 604[0m
+2018-03-12 07:18:02.912	    7efd2eb6f700	INFO 	msgwriter	src/common/scoped_message_writer.h:102	BH: 39, TH: f60d6ae2d6da4d852d8893a6aa181150ca1ca2bf50962fb8a00b214a2c6f6aac, DIFF: 607, HR: 10 H/s
+2018-03-12 07:18:05.524	    7efd2eb6f700	INFO 	msgwriter	src/common/scoped_message_writer.h:102	Blockchain saved
+2018-03-12 07:18:08.594	[miner 0]	INFO 	global	src/cryptonote_basic/miner.cpp:470	[1;32mFound block for difficulty: 607[0m
+2018-03-12 07:18:19.172	[miner 3]	INFO 	global	src/cryptonote_basic/miner.cpp:470	[1;32mFound block for difficulty: 611[0m
+2018-03-12 07:18:28.501	[miner 3]	INFO 	global	src/cryptonote_basic/miner.cpp:470	[1;32mFound block for difficulty: 614[0m
+2018-03-12 07:18:32.412	[miner 2]	INFO 	global	src/cryptonote_basic/miner.cpp:485	Miner thread stopped [2]
+2018-03-12 07:18:32.420	[miner 1]	INFO 	global	src/cryptonote_basic/miner.cpp:485	Miner thread stopped [1]
+2018-03-12 07:18:32.431	[miner 3]	INFO 	global	src/cryptonote_basic/miner.cpp:485	Miner thread stopped [3]
+2018-03-12 07:18:32.473	[miner 0]	INFO 	global	src/cryptonote_basic/miner.cpp:485	Miner thread stopped [0]
+2018-03-12 07:18:32.476	    7efd2eb6f700	INFO 	msgwriter	src/common/scoped_message_writer.h:102	Mining stopped
+2018-03-12 07:18:34.649	    7efd2eb6f700	INFO 	msgwriter	src/common/scoped_message_writer.h:102	Blockchain saved
+2018-03-12 07:18:37.683	    7efd2eb6f700	INFO 	msgwriter	src/common/scoped_message_writer.h:102	BH: 42, TH: eb5f7293e50b0b2be895a9e7fe82b4e2ca0643c746ac370111c4f8715fc35d03, DIFF: 618, HR: 10 H/s
+2018-03-12 07:18:59.052	    7efd2eb6f700	INFO 	msgwriter	src/common/scoped_message_writer.h:102	Stop signal sent
+2018-03-12 07:18:59.052	[SRV_MAIN]	INFO 	global	src/daemon/p2p.h:80	p2p net loop stopped
+2018-03-12 07:18:59.152	[SRV_MAIN]	INFO 	global	src/daemon/rpc.h:78	Stopping core rpc server...
+2018-03-12 07:18:59.152	[SRV_MAIN]	INFO 	global	src/daemon/daemon.cpp:145	Node stopped.
+2018-03-12 07:18:59.152	[SRV_MAIN]	INFO 	global	src/daemon/rpc.h:90	Deinitializing rpc server...
+2018-03-12 07:18:59.152	[SRV_MAIN]	INFO 	global	src/daemon/p2p.h:90	Deinitializing p2p...
+2018-03-12 07:18:59.659	[SRV_MAIN]	INFO 	global	src/daemon/core.h:89	Deinitializing core...
+2018-03-12 07:18:59.659	[SRV_MAIN]	INFO 	global	src/daemon/protocol.h:77	Stopping cryptonote protocol...
+2018-03-12 07:18:59.659	[SRV_MAIN]	INFO 	global	src/daemon/protocol.h:81	Cryptonote protocol stopped successfully
